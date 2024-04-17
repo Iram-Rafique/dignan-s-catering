@@ -1,0 +1,523 @@
+html {
+    font-size: 62.5% rem;
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+
+}
+
+
+body {
+    font-size: 1.6rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* ************************Navbar */
+.hamburgerBtn {
+    display: none;
+    /*hide hamburger button */
+    cursor: pointer;
+}
+
+.closeBtn {
+    display: none;
+    /* hide close button */
+    cursor: pointer;
+}
+
+
+.main-nav {
+    background-color: #6B2C57;
+    color: white;
+    display: flex;
+    height: 4rem;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+a:hover {
+    background-color: #f0eaee;
+    padding: .4rem;
+    color: black;
+}
+
+.logo {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    nav {
+        background-color: #6b2c57;
+
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: o;
+        left: 0;
+        background-color: #6b2c57;
+        width: 100%;
+        height: 80vh;
+        padding: 1rem;
+        box-sizing: border-box;
+        z-index: 999;
+        display: none;
+    }
+
+    .hamburgerBtn {
+        width: 100%;
+        background-color: #6b2c57;
+        color: white;
+        display: block;
+        padding: 5px;
+        font-size: 3rem;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+    }
+
+    .logo {
+        margin-top: 30px;
+    }
+
+    .closeBtn {
+        display: none;
+        /*  hide close button */
+        position: absolute;
+        top: 0;
+        left: 0;
+        padding: 5px;
+        font-size: 3rem;
+    }
+
+    .main-nav.showNav {
+        display: flex;
+    }
+
+    .showNav .hamburgerBtn {
+        display: none;
+        /* hide hamburger menu icon when menu is open */
+    }
+
+    .showNav .closeBtn {
+        display: block;
+        z-index: 2;
+
+    }
+}
+
+/* slideshow container starts*/
+
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    width: 100%;
+
+    position: relative;
+    margin: auto;
+    height: 700px;
+}
+
+.mySlides img {
+    width: 100%;
+    height: 700px;
+}
+
+.slide-heading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    width: 70%;
+    max-width: 600px;
+    /* move the element 50% of its width to the left (-50% for the X-axis) and 50% of its height upwards (-50% for the Y-axis) */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.slideshow-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: .3rem;
+
+}
+
+.slideshow-text {
+    font-size: 1.rem;
+    color: #ffffff;
+
+}
+
+.dot-container {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-bottom: 5px;
+    background-color: #a1a1a1;
+    border: 2px solid white;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+}
+
+
+.active,
+.dot:hover {
+    background-color: #2b2926;
+}
+
+/* fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0.3
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* about section starts */
+
+section.about {
+    margin-top: 30px;
+
+}
+
+.about {
+
+    width: 98%;
+    max-width: 1600px;
+    margin: 0 auto;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-top: 0%;
+    background-color: #f0eaee;
+    /* color: #ffffff; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    border-radius: 10px;
+}
+
+.about h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.about p {
+    max-width: 60%;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    letter-spacing: -1px;
+    margin: 0 auto;
+
+    margin-bottom: 20px;
+}
+
+
+/*  */
+/* why choose us */
+.why-choose-us {
+    margin-top: 30px;
+    background-color: #f0eaee;
+    text-align: center;
+    padding: 2rem 0;
+    margin-bottom: 20px;
+}
+
+.experience-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+
+}
+
+.ingrediants-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    margin-bottom: 2.5rem;
+}
+
+.ingrediants p {
+    font-size: 1.3rem;
+    width: 100%;
+
+}
+
+.ingrediants-title {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+.ingrediants,
+.hospitality-image-1,
+.hospitality-image-2 {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.ingrediants {
+    width: 100%;
+    max-width: 1000%;
+    background-image: url("../images/foodimage1.jpg");
+    height: 300px;
+    margin: 0 auto;
+    position: relative;
+
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    width: 100%;
+    height: 100%;
+}
+
+
+
+/*  */
+/* hospitality container */
+
+.hospitality-container {
+    display: flex;
+    /* flex-wrap: wrap; */
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 2.5rem;
+}
+
+.hospitality-text-title {
+    font-size: 1.8rem;
+}
+
+.hospitality-text {
+    width: 100%;
+    padding: 0 2rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 1.3rem;
+}
+
+
+.hospitality-image-1 {
+    background-image: url("../images/foodimage2.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* margin works clockwise */
+.hospitality-image-2 {
+
+    background-image: url("../images/foodimage3.jpg");
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+}
+
+.hospitality-image-1,
+.hospitality-image-2 {
+    height: 600px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1% 1%;
+}
+
+/* footer starts here */
+.footer {
+    margin-top: 50px;
+    /* background-color: #f0eaee; */
+    background-color: #6b2c57;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer-section {
+    flex: 1;
+}
+
+.footer h4 {
+    margin-bottom: 1rem;
+    /* color: rgb(103, 103, 103); */
+    color: #EBEBEB;
+}
+
+.social-media-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.social-media-icons .icon {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #EBEBEB;
+}
+
+.footer p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #EBEBEB;
+
+}
+
+.footer hr {
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.footer .copyright {
+    font-size: 14px;
+
+}
+
+/* finish */
+
+
+@media screen and (max-width: 768px) {
+    .slideshow-container {
+        width: 100%;
+        max-width: 1550px;
+        max-width: none;
+    }
+
+    .ingrediants p {
+        text-align: center;
+        margin: .5rem;
+        width: 90%;
+
+    }
+
+    .slide-heading {
+        width: 75%;
+        max-width: none;
+        padding: .4rem;
+        border-radius: 5px;
+        padding-bottom: 2rem;
+    }
+
+    .slideshow-title {
+        font-size: 1.4rem;
+    }
+
+
+    .about h2 {
+
+        font-size: 1.4rem;
+
+    }
+
+    .about {
+        height: auto;
+        padding: 1rem;
+    }
+
+    .about p {
+        max-width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .hospitality-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .hospitality-image-1,
+    .hospitality-image-2,
+    .overlay {
+        width: 90%;
+        max-width: none;
+    }
+
+    .overlay {
+
+        width: 100%;
+
+    }
+
+    .footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .footer h4 {
+        margin-top: .5rem;
+    }
+
+}

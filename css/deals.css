@@ -1,0 +1,136 @@
+body {
+    background-image: url("../images/offers-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.offerWrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+
+
+.offer-card {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%;
+    margin: 2rem;
+    padding: 30px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+}
+
+.offer-card button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.offer-card li {
+    text-align: left;
+    margin-bottom: 2rem;
+
+}
+
+.offer-card h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+
+}
+
+.offer {
+    font-size: 1rem;
+    list-style: none;
+    margin-bottom: 8px;
+
+}
+
+.offer-hr {
+    border: 0;
+    border-top: 1px solid #000000;
+    margin: 20px auto;
+    width: 80%;
+
+
+}
+
+header h1,
+header h2 {
+    font-weight: bold;
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 3rem 0;
+
+
+
+
+
+}
+
+
+
+.offer-card button {
+    position: absolute;
+    background-color: #6B2C57;
+    padding: .5rem;
+    width: 100%;
+    color: #f9f9f9;
+    font-weight: bold;
+    font-size: 1rem;
+    border: none;
+
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ca98ba;
+    transform: scale(1.05);
+    color: #000000;
+
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .offer-card {
+        width: 100%;
+
+    }
+
+
+    header h2 {
+        padding: 2rem 0;
+        font-size: 1.4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    header h1 {
+        padding: 6rem 0 2rem 0;
+        font-size: 1.6rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .offer-card {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .offer-card {
+        width: 100%;
+    }
+
+}
