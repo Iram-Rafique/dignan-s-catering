@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Registration & Catering Order</title>
+    <meta name="description"
+        content="Dignans Catering provides high-quality catering services for various events and occasions. Our menu includes a wide range of delicious options to suit every taste.">
+    <meta name="keywords"
+        content="Edinburgh,catering, food catering, event catering, party catering, catering services, Dignans Catering">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3b5c3e7441.js" crossorigin="anonymous"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/order.css">
+
+
+</head>
+
+<body>
+    <nav>
+        <div id="nav-menu-icon" class="hamburgerBtn">&#9776;</div>
+
+        <ul class="main-nav">
+            <div id="nav-closeBtn" class="closeBtn">&times;</div>
+            <li class="logo">DIGNAN'S CATERING</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Offers</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="order-section">
+        <div class="container">
+            <h2>User Registration</h2>
+            <form id="registrationForm">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" placeholder="Name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <hr>
+            <h2>Place Catering Order via Email</h2>
+            <form id="orderForm">
+                <label for="customerName">Name:</label>
+                <input type="text" id="customerName" name="customerName" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="orderDetails">Order Details:</label>
+                <textarea id="orderDetails" name="orderDetails" rows="10"></textarea>
+                <button type="submit">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FOLLOW US</h4>
+                <div class="social-media-icons">
+                    <a class="icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="icon" href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="icon" href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <p>Email: contact@dignanshospitality.com</p>
+                <p>Phone: 0131 669 4400</p>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright" id="year"></p>
+    </footer>
+
+
+    <script src="js/headerFooter.js"></script>
+
+
+
+
+
+    <script>
+        document.getElementById('registrationForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+            // Here you can add code to handle user registration
+            alert('User registered successfully!');
+        });
+
+        document.getElementById('orderForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent the form from submitting
+            const formData = new FormData(event.target);
+            const customerName = formData.get('customerName');
+            const email = formData.get('email');
+            const orderDetails = formData.get('orderDetails');
+            // Here you can add code to send the order details via email
+            alert('Order placed successfully!'); // For demonstration purposes
+        });
+
+    </script>
+</body>
+
+</html>

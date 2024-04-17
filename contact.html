@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description"
+        content="Dignans Catering provides high-quality catering services for various events and occasions. Our menu includes a wide range of delicious options to suit every taste.">
+    <meta name="keywords"
+        content="Edinburgh,catering, food catering, event catering, party catering, catering services, Dignans Catering">
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/3b5c3e7441.js" crossorigin="anonymous"></script>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <!-- <script src="js/headerFooter.js"></script> -->
+
+
+
+
+</head>
+
+
+<body>
+    <nav>
+        <div id="nav-menu-icon" class="hamburgerBtn">&#9776;</div>
+    
+        <ul class="main-nav">
+            <div id="nav-closeBtn" class="closeBtn">&times;</div>
+            <li class="logo">DIGNAN'S CATERING</li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="deals.html">Offers</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="contact.html">Contact</a></li>
+           
+        </ul>
+    </nav>
+    
+    <main class="main-container">
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h1>GET IN TOUCH WITH US</h1>
+                <p class="contact-text">
+                    For any inquiries, bookings, or to share your dining experience, contact us at <strong>DIGNANAS
+                        CATERING</strong>.Our
+                    team is dedicated to ensuring your satisfaction and creating a delightful culinary experience.
+                    Your
+                    feedback is valued, and we look forward to connecting with you soon.
+                </p>
+            </div>
+    </main>
+    <div class="contact-details-wrapper">
+        <div class="contact-details">
+            <a id="open" class="location-icon">
+                <i class="fas fa-map-marker-alt"></i>
+                <p>24 Milton Road East, Edinburgh EH15 2PP</p>
+            </a>
+        </div>
+        <div class="contact-details">
+            <a href="mailto:contact@dignans.com" class="email-icon">
+                <i class="far fa-envelope"></i>
+                <p>contact@dignanshospitality.com</p>
+            </a>
+
+        </div>
+        <div class="contact-details">
+            <a href="tel:+44131 669 4400" class="phone-icon">
+                <i class="fas fa-phone-alt"></i>
+                <p>+44 131 669 4400</p>
+            </a>
+        </div>
+    </div>
+    </main>
+
+
+
+    <section>
+
+        <form class="form" onsubmit=" return validateForm()">
+            <div class="form-items">
+                <label for="name">Enter your name please</label>
+                <input type="text" id="name" placeholder="Name" minlength="5" maxlength="10">
+                <span id="nameError"></span>
+
+                <label for="email">Enter your email please</label>
+                <input type="text" placeholder="email" id="email">
+                <span id="emailError"></span>
+
+
+                <textarea id="message" name="textarea" cols="50" rows="10"></textarea>
+
+                <span id="messageError"></span>
+                <button class="Submit" id="sub_btn">Submit</button>
+            </div>
+        </form>
+    </section>
+
+    <div class="modal" id="map-modal">
+        <div class="close-btn" id="close">&#x2715</div>
+
+        <div class="google-map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2241.089369304804!2d-4.265761023813445!3d55.82640808632019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x488846fac7512f97%3A0x97841ecc6b9f0395!2sGlasgow%20Clyde%20College%20-%20Langside%20Campus!5e0!3m2!1sen!2suk!4v1706182712862!5m2!1sen!2suk"
+                style="border:0;" allowfullscreen="true" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="street-view">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!4v1706182814134!6m8!1m7!1sU6NpOlzf61gDPRzBKtI-6Q!2m2!1d55.8262432082062!2d-4.264899181120629!3f80.3400038203261!4f0!5f0.7820865974627469"
+                style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>FOLLOW US</h4>
+                <div class="social-media-icons">
+                    <a class="icon" href="https://www.facebook.com" target="_blank" aria-label="Facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a class="icon" href="https://www.instagram.com" target="_blank" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="icon" href="https://www.youtube.com" target="_blank" aria-label="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>CONTACT</h4>
+                <p>Email: contact@dignanshospitality.com</p>
+                <p>Phone: 0131 669 4400</p>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright" id="year"></p>
+    </footer>
+
+
+
+
+  
+    <script src="js/headerFooter.js"></script>
+    <script src="js/map.js"></script>
+      <script src="js/contactForm.js"></script> 
+
+
+</body>
+
+</html>
